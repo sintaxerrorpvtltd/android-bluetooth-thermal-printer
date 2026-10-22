@@ -1,0 +1,1 @@
+<print-service xmlns:android="http://schemas.android.com/apk/res/android" android:settingsActivity="local.sintax.thermal58.SetupActivity" android:addPrintersActivity="local.sintax.thermal58.SetupActivity"/>

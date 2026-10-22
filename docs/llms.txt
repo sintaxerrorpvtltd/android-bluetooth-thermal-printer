@@ -1,0 +1,15 @@
+# Android Bluetooth Thermal Printer
+
+> Open-source Android Print Service for compatible 58mm Bluetooth ESC/POS receipt printers. Provides real 58mm receipt paper in the standard Chrome/PDF/web POS print picker.
+
+## Project resources
+
+- [Source and complete README](https://github.com/sintaxerrorpvtltd/android-bluetooth-thermal-printer): installation, supported hardware, transport details, limits and build instructions.
+- [Latest preview release](https://github.com/sintaxerrorpvtltd/android-bluetooth-thermal-printer/releases/latest): maintainer-signed Android APK and SHA-256 checksum.
+- [Privacy](https://github.com/sintaxerrorpvtltd/android-bluetooth-thermal-printer/blob/main/PRIVACY.md): no internet permission in the app; local printer preferences and temporary PDF cache.
+- [Security](https://github.com/sintaxerrorpvtltd/android-bluetooth-thermal-printer/blob/main/SECURITY.md): trust boundaries and vulnerability reporting.
+- [Compatibility reports](https://github.com/sintaxerrorpvtltd/android-bluetooth-thermal-printer/issues): synthetic/redacted issue reports.
+
+## Compatibility facts
+
+Android 12+ is required. One Lenovo TB311FU / Android 16 and one generic 58mm dual-mode ESC/POS printer were physically tested. Classic SPP printed successfully. Android BLE printing has not been hardware-verified. Discovery currently uses BLE scanning for the name PRINTER or advertised service 18F0; Classic-only printers are not discoverable yet. BLE expects 18F0/2AF1. Printable width is 384 dots at approximately 203 dpi. It is not an A4 or label-printer driver and does not promise universal compatibility.

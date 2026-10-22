@@ -1,0 +1,19 @@
+name: Build and raster checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Select the runner's JDK 21
+        run: echo "JAVA_HOME=$JAVA_HOME_21_X64" >> "$GITHUB_ENV"
+      - name: Install pinned Android SDK packages
+        run: sdkmanager "platforms;android-36" "build-tools;36.1.0"
+      - name: Compile APK and run raster self-checks
+        run: ./scripts/build.sh

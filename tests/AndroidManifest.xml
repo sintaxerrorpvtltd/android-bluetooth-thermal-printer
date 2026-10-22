@@ -1,0 +1,5 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="local.sintax.thermal58.tests" android:versionCode="1" android:versionName="1.0">
+ <uses-sdk android:minSdkVersion="31" android:targetSdkVersion="36"/>
+ <application android:label="58mm Local Checks" android:allowBackup="false"/>
+ <instrumentation android:name="local.sintax.thermal58.SelfCheck" android:targetPackage="local.sintax.thermal58.tests" android:functionalTest="true"/>
+</manifest>

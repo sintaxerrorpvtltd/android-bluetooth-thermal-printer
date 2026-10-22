@@ -1,0 +1,32 @@
+# Build outputs and private signing material
+/build/
+/dist/
+*.apk
+*.apk.idsig
+*.dex
+*.class
+*.jar
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+*password*.txt
+.env
+.env.*
+local.properties
+.DS_Store
+.idea/
+*.iml
+# Printer sessions and personal print material never belong in this repository.
+/work/
+/private/
+/Pending/
+*.pdf
+*.heic
+*.HEIC
+*.jpg
+*.jpeg
+*.png
+*.log
